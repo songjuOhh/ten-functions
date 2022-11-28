@@ -20,4 +20,73 @@
  * and
  * concat
  */
+function isFalse (input){
+    return input === false;
+}
+
+function isTrue (input){
+     return input === true;
+}
+
+function isEven (input){
+    if (input %2 ===0 ) {
+        return true;
+    }else if(input === true ||input ===false){
+        return false;
+    }else{
+        return false;
+    }
+}
+
+function addOne (input){
+    if(isNaN( input) !== true) {
+        let result;
+        result = parseFloat(input) + 1;
+        return result;
+    }else if(input === Infinity){
+        return Infinity;
+    }
+}
+
+function isEqual (a, b){
+    if(parseInt( a) === parseInt( b) || a == b){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function isIdentical (a, b){
+    if(a===b){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function not (input){
+    // if(isNaN(input)===true) {
+    //     return true;
+    // }else if(input === true || input === input.toString() || input === 0 || input === null){
+    //     return true;
+    // }else{
+    //     return false;
+    // }
+    return !input;
+}
+
+function and (a,b){
+    return a && b;
+}
+
+function or (a,b){
+    return a || b;
+}
+
+function concat (a,b){
+    let result;
+    result = a.toString() + b.toString();
+    return result;
+}
+
 
