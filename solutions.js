@@ -29,14 +29,18 @@ function isTrue (input){
 }
 
 function isEven (input){
-    if (input %2 ===0 ) {
-        return true;
-    }else if(input === true ||input ===false){
-        return false;
-    }else{
-        return false;
-    }
+    // if (parseFloat( input) %2 ===0 ) {
+    //     return true;
+    // }else if(input === true ||input ===false){
+    //     return false;
+    // }else{
+    //     return false;
+    // }
+    let result;
+    result = parseFloat(input)%2 ===0;
+    return result
 }
+
 
 function addOne (input){
     if(isNaN( input) !== true) {
