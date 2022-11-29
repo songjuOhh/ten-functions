@@ -95,6 +95,9 @@ function concat (a,b){
     // let result;
     // result = a.toString() + b.toString();
     // return result;
+
+    // return String(a) + String(b);
+
     return '' + a + b;
 }
 
