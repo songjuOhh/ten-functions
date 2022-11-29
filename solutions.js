@@ -92,9 +92,10 @@ function or (a,b){
 }
 
 function concat (a,b){
-    let result;
-    result = a.toString() + b.toString();
-    return result;
+    // let result;
+    // result = a.toString() + b.toString();
+    // return result;
+    return '' + a + b;
 }
 
 
