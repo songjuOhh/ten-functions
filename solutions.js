@@ -43,13 +43,15 @@ function isEven (input){
 
 
 function addOne (input){
-    if(isNaN( input) !== true) {
-        let result;
-        result = parseFloat(input) + 1;
-        return result;
-    }else if(input === Infinity){
-        return Infinity;
-    }
+    // if(isNaN( input) !== true) {
+    //     let result;
+    //     result = parseFloat(input) + 1;
+    //     return result;
+    // }else if(input === Infinity){
+    //     return Infinity;
+    // }
+
+    return ++input;
 }
 
 function isEqual (a, b){
