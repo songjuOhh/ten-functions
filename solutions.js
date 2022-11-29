@@ -36,6 +36,9 @@ function isEven (input){
     // }else{
     //     return false;
     // }
+    if(typeof 'input' === 'boolean')
+        return false;
+
     let result;
     result = parseFloat(input)%2 ===0;
     return result
@@ -50,12 +53,11 @@ function addOne (input){
     // }else if(input === Infinity){
     //     return Infinity;
     // }
-
     return ++input;
 }
 
 function isEqual (a, b){
-    if(parseInt( a) === parseInt( b) || a == b){
+    if(a == b){
         return true;
     }else{
         return false;
